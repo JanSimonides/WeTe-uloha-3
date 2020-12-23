@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text1"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="141dp"
+        android:text="Aktivita č.2"></TextView>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/box"
+        android:layout_alignStart="@+id/box"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="-29dp"
+        android:layout_marginBottom="24dp"
+        android:text="Na obed som si dal"
+        tools:ignore="UnknownId"></TextView>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="6dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/box"
+        android:layout_alignRight="@+id/text1"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="-111dp"
+        android:layout_marginRight="-19dp"
+        android:layout_marginBottom="22dp"
+        android:layout_toStartOf="@+id/box"
+        android:layout_toEndOf="@+id/text1"
+        android:text=""
+        android:textStyle="bold"></TextView>
+
+    <CheckBox
+        android:id="@+id/box"
+        android:text=""
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+    </CheckBox>
+    <Switch
+        android:id="@+id/switchButton"
+
+        android:layout_below="@+id/box"
+        android:layout_alignStart="@+id/box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Switch>
+    <TextView
+        android:text="Chcem si ešte objednať"
+        android:layout_toRightOf="@+id/switchButton"
+        android:layout_below="@id/box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switchButton"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="69dp"
+        android:src="@drawable/img"></ImageButton>
+
+</RelativeLayout>

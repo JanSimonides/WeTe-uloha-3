@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aktivita č. 1"
+        android:layout_gravity="center"
+        android:paddingBottom="50dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Na obed by som si dal"
+        android:layout_gravity="center"
+        android:paddingBottom="20dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:id="@+id/rg"
+        android:paddingBottom="50dp">
+        <RadioButton android:id="@+id/pizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pizza"
+            android:layout_gravity="center" />
+        <RadioButton android:id="@+id/rezen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rezen"
+            android:layout_gravity="center" />
+
+        <RadioButton
+            android:id="@+id/halusky"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="halusky" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Odosli"
+        android:layout_gravity="center"
+        android:id="@+id/buton"/>
+
+</LinearLayout>
